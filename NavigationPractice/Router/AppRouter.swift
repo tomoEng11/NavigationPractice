@@ -67,7 +67,6 @@ final class AppRouter {
             path.removeLast()
         }
     }
-
 }
 
 

@@ -11,11 +11,6 @@ import Foundation
 struct User: Hashable {
     let id: Int
     var name: String
-    var data: Data?
-
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
 }
 
 

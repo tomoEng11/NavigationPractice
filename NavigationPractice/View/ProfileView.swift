@@ -28,3 +28,4 @@ struct ProfileView: View {
     ProfileView(user: User(id: 1, name: "tomo"))
         .environment(AppRouter())
 }
+
