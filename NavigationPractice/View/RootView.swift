@@ -23,8 +23,8 @@ struct RootView: View {
                 }
             }
             .padding()
-            .navigationDestination(for: Destination.self) { routerName in
-                routerName.makeView()
+            .navigationDestination(for: Destination.self) { destination in
+                destination.makeView()
             }
         }
         .environment(router)
