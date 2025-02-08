@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct RootView: View {
-    @State var router = AppRouter()
+    @Environment(AppRouter.self) var router
 
     var body: some View {
+        @Bindable var router = router
+
         NavigationStack(path: $router.path) {
             VStack(spacing: 40) {
                 CustomButton("Home") {

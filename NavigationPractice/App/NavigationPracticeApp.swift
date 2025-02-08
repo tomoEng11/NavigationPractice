@@ -10,9 +10,12 @@ import SwiftUI
 
 @main
 struct NavigationPracticeApp: App {
+    @State private var router: AppRouter = .init()
+
     var body: some Scene {
         WindowGroup {
             RootView()
+                .environment(router)
         }
     }
 }
